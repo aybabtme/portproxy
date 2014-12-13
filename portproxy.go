@@ -28,7 +28,7 @@ func main() {
 	var (
 		lPort        = flag.Int("port", 8080, "local port on which the proxy will listen")
 		remoteAddr   = flag.String("raddr", "", "remote address, as a pair of addr:port, where the requests are sent")
-		highjackHTTP = flag.Bool("highjack-http", true, "usage")
+		highjackHTTP = flag.Bool("http", false, "usage")
 	)
 	flag.Parse()
 
